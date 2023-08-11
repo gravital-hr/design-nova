@@ -1,0 +1,42 @@
+.badge {
+    height: 1.2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    font-size: 0.6rem;
+    font-style: normal;
+    border-radius: 0.6rem;
+    background: white;
+    padding: 0 .4rem;
+    display: inline-block;
+
+    /* in default container */
+    background-color: var(--color-primary);
+    color: white;
+}
+
+/* in primary container */
+.primary .badge {
+    background-color: white;
+    color: var(--color-primary);
+}
+
+/* in secondary container */
+.secondary .badge {
+    background-color: white;
+    color: var(--color-secondary);
+}
+
+.badge.i {
+    background-color: var(--color-success);
+    color: white;
+}
+
+.badge.w {
+    background-color: var(--color-warn);
+    color: var(--color-dark);
+}
+
+.badge.e {
+    background-color: var(--color-error);
+    color: white;
+}

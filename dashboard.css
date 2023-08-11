@@ -1,0 +1,167 @@
+/* Media Sizes
+// smaller screen
+@media (max-width: 74em) {}
+// mobile
+@media (max-width: 48em) {}
+*/
+
+/* color variables */
+:root {
+    --color-primary: rgb(0, 180, 225);
+    --color-secondary: rgb(93, 106, 113);
+    --color-dark: rgb(93, 106, 113);
+    --color-success: rgb(0, 111, 94);
+    --color-warn: rgb(255, 152, 0);
+    --color-error: red;
+    /* 50% dark */
+    --color-text: rgb(93, 106, 113);
+    --color-highlight: rgb(52, 32, 140);
+    --color-mid-gradient: rgb(22, 216, 248);
+    --color-border: rgb(202, 203, 204);
+}
+
+@font-face {
+    font-family: 'Kelson';
+    src: url(./kelson_sans_normal.ttf);
+    /* src: url(./KelsonSans-LightBG.woff2); */
+    /* src: url(./KelsonSans-RegularBG.woff2); */
+    /* src: url(./KelsonSans-BoldBG.woff2);  */
+}
+
+/* default styling/theme */
+body,
+html {
+    color: var(--color-text);
+
+    font-size: calc(10px + 0.3vw);
+    font-family: Kelson, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif;
+}
+
+body {
+    /* margin-top: 56px; */
+    background: center / cover no-repeat url(bg.jpg), linear-gradient(90deg,
+            var(--color-primary) 0%,
+            var(--color-mid-gradient) 50%,
+            var(--color-primary) 100%);
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid var(--color-border);
+    /* make sure hr is visible in flex container */
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* color scheme default */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-primary);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-warn);
+}
+
+time,
+small {
+    font-size: .7rem;
+}
+
+time {
+    color: var(--color-primary);
+}
+
+time::before {
+    font-family: Linearicons-Free;
+    content: "\e836";
+    margin-right: .2rem;
+}
+
+/**/
+.default {
+    background-color: white;
+    color: var(--color-text);
+}
+
+
+/* color scheme primary */
+.primary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+.primary h1,
+.primary h2,
+.primary h3,
+.primary h4,
+.primary h5,
+.primary h6 {
+    color: white;
+}
+
+.primary a {
+    color: white;
+}
+
+.primary a:hover {
+    color: var(--color-text);
+}
+
+.primary hr {
+    border-color: white;
+}
+
+.primary time {
+    color: var(--color-warn);
+}
+
+/* color scheme secondary */
+.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-dark);
+}
+
+.secondary h1,
+.secondary h2,
+.secondary h3,
+.secondary h4,
+.secondary h5,
+.secondary h6 {
+    color: white;
+}
+
+.secondary a {
+    color: white;
+}
+
+.secondary a:hover {
+    color: var(--color-primary);
+}
+
+.secondary time {
+    color: white;
+}
+
+/* common layout elements */
+.apart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroll {
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* да "отлепим" съдържанието от скролера */
+    padding-right: 1.2rem;
+}
