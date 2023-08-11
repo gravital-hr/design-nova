@@ -17,6 +17,11 @@
     overflow-y: auto;
 }
 
+#inspiration {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
 /* mobile screen */
 @media (max-width: 48em) {
     #main {

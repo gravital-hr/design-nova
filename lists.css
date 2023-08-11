@@ -73,3 +73,11 @@ ul.status>li.holiday::before {
     background-color: white;
     color: var(--color-primary);
 }
+
+ul.status>li.star::before {
+    /*star*/
+    content: "";
+    /* background-color: white; */
+    background-image: url(lnr-star.svg);
+    background-size: cover;
+}
