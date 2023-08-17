@@ -62,15 +62,32 @@
     margin-right: .2rem;
 }
 
-.news .like {
+.news .like,
+.news .star,
+.news .starred {
     color: var(--color-text);
     text-decoration: none;
     font-size: .7rem;
 }
 
-.news .like::before {
+.news .like::before,
+.news .star::before,
+.news .starred::before {
     font-family: Linearicons-Free;
-    content: "\e813";
     margin-right: .2rem;
+}
+
+.news .like::before {
+    content: "\e86d";
+    color: var(--color-success);
+}
+
+.news .star::before {
+    content: "\e813";
+    color: var(--color-texxt);
+}
+
+.news .starred::before {
+    content: "\e813";
     color: var(--color-error);
 }
