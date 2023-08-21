@@ -3,7 +3,7 @@
     height: 2.5rem;
     justify-content: space-between;
     align-items: center;
-    padding: .5rem 4rem;
+    padding: .5rem 2rem;
     gap: 1rem;
     background-color: white;
     /* opacity: .8; */
@@ -22,7 +22,6 @@
 /* nav */
 .nav {
     font-size: 1.2rem;
-
 }
 
 .nav ul {
@@ -90,6 +89,11 @@
     padding: 2rem;
     align-items: flex-start;
     z-index: 1000;
+}
+
+.submenu-right {
+    left: unset !important;
+    right: 0;
 }
 
 .nav li:hover>a,
