@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css"
+        integrity="sha256-zMpYM6KkYVLHkqU5YryFSKD63iD1sjdJk7Dq8DEkC8I=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="../dashboard.css" />
+    <link rel="stylesheet" href="../card.css" />
+    <link rel="stylesheet" href="../news.css" />
+    <link rel="stylesheet" href="../badge.css" />
+    <link rel="stylesheet" href="../lists.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <title>Дизайн 2</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <img class="brand" src="https://nstatic.nova.bg/files/nova/images/nova-logo.svg" />
+        <nav class="nav" role="navigation">
+            <ul>
+                <li>
+                    <a href="#" aria-haspopup="true">
+                        <span class="lnr lnr-graduation-hat"></span>
+                        <span>Обучения</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Текущи</a>
+                        <a href="#">Резултати</a>
+                        <a href="#">Библиотека</a>
+                        <a href="#">Документи</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-list"></span>
+                        <span>Цели и оценка</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Ценности</a>
+                        <a href="#">24/7 Обратна Връзка</a>
+                        <a href="#">Цели</a>
+                        <a href="#">Оценка</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-rocket"></span>
+                        <span>Програми</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Етика и съответствие</a>
+                        <a href="#">Менторска програма</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-leaf"></span>
+                        <span>TimeOff</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-warning"></span>
+                        <span>Етика и съответствие</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Бизнес поведение и етика</a>
+                        <a href="#">Антикорупционни политики</a>
+                        <a href="#">Регистри</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-users"></span>
+                        <span>Кариери</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-layers"></span>
+                        <span>Структури</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#" aria-haspopup="true" class="user">
+                        <div>
+                            Иван Иванов
+                        </div>
+                        <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="portrait" />
+                    </a>
+                    <div class="submenu submenu-right" aria-label="submenu">
+                        <a href="#">Профил</a>
+                        <a href="#">Управление</a>
+                        <hr />
+                        <a href="#">Изход</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="card secondary" id="news">
+            <header>
+                <h1>Новини</h1>
+                <span class="lnr lnr-bullhorn"></span>
+                <!-- <i class="ti ti-news"></i> -->
+            </header>
+            <div class="scroll">
+                <article class="news">
+                    <!-- <img src="news/news1.jpg" /> -->
+                    <div class="img">
+                        <div style="background-image: url(../news/news1.jpg)"></div>
+                    </div>
+                    <div>
+                        <h1><a href="#">Изживей магията на лятото с Coca-Cola на 22 юни</a> <i class="badge">важно /
+                                pinned</i></h1>
+                        <time>Преди 4 часа</time>
+                        <small class="user">Иван Иванов</small>
+                    </div>
+                </article>
+                <hr />
+                <article class="news">
+                    <!-- <img src="news/news2.png" /> -->
+                    <div class="img">
+                        <div style="background-image: url(../news/news2.png)"></div>
+                    </div>
+                    <div>
+                        <h1><a href="#">Нови линкове за регистрация за спортна карта CoolFit</a></h1>
+                        <time>Преди 3 дни</time>
+                        <small class="user">Иван Иванов</small>
+                    </div>
+                </article>
+                <hr />
+                <article class="news">
+                    <!-- <img src="news/news3.jpg" /> -->
+                    <div class="img">
+                        <div style="background-image: url(../news/news3.jpg)"></div>
+                    </div>
+                    <div>
+                        <h1><a href="#">Покана за турнир по петанк, 23 август 2022</a></h1>
+                        <time>23.08.2022</time>&nbsp;
+                        <small class="user">Иван Иванов</small>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="mission">
+            <!-- this is empty, it has background in css file -->
+        </section>
+
+        <section class="card primary" id="inspiration">
+            <header>
+                <h1>24/7 Вдъхновение <i class="badge">2</i></h1>
+                <span class="lnr lnr-star"></span>
+                <!-- <i class="ti ti-speakerphone"></i> -->
+            </header>
+            <div class="scroll">
+                <ul class="unstyled split-border status">
+                    <li class="star">
+                        Зорница Янкова Георгиева
+                        <div class="apart">
+                            <small>
+                                Отношение към колегите<br />
+                                Спазва поетите ангажименти/обещания към колегите.
+                            </small>
+                            <time>днес</time>
+                        </div>
+                    </li>
+                    <li class="star">
+                        Венелин Георгиев Минков
+                        <div class="apart">
+                            <small>
+                                Отношение към колегите<br />
+                                Спазва поетите ангажименти/обещания към колегите.
+                            </small>
+                            <time>преди 3 дни</time>
+                        </div>
+                    </li>
+                    <li class="star">
+                        Райко Стоименов Илиев
+                        <div class="apart">
+                            <small>
+                                Отношение към колегите<br />
+                                Спазва поетите ангажименти/обещания към колегите.
+                            </small>
+                            <time>преди 6 дни</time>
+                        </div>
+                    </li>
+                    <li class="star">
+                        Тодор Ангелов Милиев
+                        <div class="apart">
+                            <small>
+                                Отношение към колегите<br />
+                                Спазва поетите ангажименти/обещания към колегите.
+                            </small>
+                            <time>20 юли</time>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="card default" id="focus">
+            <header>
+                <h1>Акценти</h1>
+                <span class="lnr lnr-pushpin"></span>
+                <!-- <i class="ti ti-briefcase"></i> -->
+            </header>
+            <div class="scroll">
+
+            </div>
+        </section>
+
+
+        <section class="card default">
+            <header>
+                <h1>Документи</h1>
+                <span class="lnr lnr-book"></span>
+                <!-- <i class="ti ti-school"></i> -->
+            </header>
+            <div class="scroll">
+                <ul class="unstyled split-border">
+                    <li>
+                        <a href="#">Правилници</a><br />
+                        <small>
+                            Вътрешни правила и политики
+                        </small>
+                    </li>
+
+                    <li>
+                        <a href="#">Процедури</a><br />
+                        <small>
+                            Вътрешни процедури
+                        </small>
+                    </li>
+                    <li>
+                        <a href="#">Бланки</a><br />
+                        <small>
+                            Смяна на сметка, прекратяване на договор
+                        </small>
+                    </li>
+                    <li>
+                        <a href="#">Придобивки</a><br />
+                        <small>
+                            Оферти, застраховки, здравно осигуряване
+                        </small>
+                    </li>
+
+                </ul>
+
+                <hr />
+                <div style="text-align: right;">
+                    <a href="#">Виж всички</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="card default" id="events">
+            <header>
+                <h1>Събития</h1>
+                <span class="lnr lnr-calendar-full"></span>
+                <!-- <i class="ti ti-calendar-event"></i> -->
+            </header>
+            <div class="scroll">
+                <article class="news">
+                    <!-- <img src="news/news3.jpg" /> -->
+                    <div class="img">
+                        <div style="background-image: url(../news/news3.jpg)"></div>
+                    </div>
+                    <div>
+                        <h1><a href="#">Турнир по петанг</a></h1>
+                        <time>1ви октомври</time>
+                    </div>
+                </article>
+                <hr />
+                <div style="text-align: right;">
+                    <a href="#">Виж всички</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="apart primary" id="footer">
+        <div id="links">
+            <a href="#">Политика за бисквитките</a>
+            <a href="#">Политика за поверителност</a>
+        </div>
+        <small id="copyright">
+            © Copyright 2023 Gravital, All Rights Reserved.
+        </small>
+    </footer>
+
+</body>
+
+</html>

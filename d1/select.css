@@ -1,0 +1,40 @@
+select,
+input {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+
+    z-index: 1;
+    outline: none;
+}
+
+.select {
+    display: grid;
+    grid-template-areas: "select";
+    align-items: center;
+    position: relative;
+
+    min-width: 15ch;
+    max-width: 30ch;
+
+    border-bottom: 1px solid white;
+    border-radius: 0;
+    padding: 0.25em 0.5em;
+
+    cursor: pointer;
+}
+
+.select select,
+.select::after {
+    grid-area: select;
+}
+
+.select::after {
+    content: "";
+    justify-self: end;
+    width: 0.8em;
+    height: 0.5em;
+    background-color: white;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}

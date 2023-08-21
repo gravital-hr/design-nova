@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css"
+        integrity="sha256-zMpYM6KkYVLHkqU5YryFSKD63iD1sjdJk7Dq8DEkC8I=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="../dashboard.css" />
+    <link rel="stylesheet" href="../card.css" />
+    <link rel="stylesheet" href="../news.css" />
+    <link rel="stylesheet" href="../badge.css" />
+    <link rel="stylesheet" href="../lists.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="select.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <title>Дизайн 1</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <img class="brand" src="https://nstatic.nova.bg/files/nova/images/nova-logo.svg" />
+        <nav class="nav" role="navigation">
+            <ul>
+                <li>
+                    <a href="#" aria-haspopup="true">
+                        <span class="lnr lnr-graduation-hat"></span>
+                        <span>Обучения</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Текущи</a>
+                        <a href="#">Резултати</a>
+                        <a href="#">Библиотека</a>
+                        <a href="#">Документи</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-list"></span>
+                        <span>Цели и оценка</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Ценности</a>
+                        <a href="#">24/7 Обратна Връзка</a>
+                        <a href="#">Цели</a>
+                        <a href="#">Оценка</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-rocket"></span>
+                        <span>Програми</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Етика и съответствие</a>
+                        <a href="#">Менторска програма</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-leaf"></span>
+                        <span>TimeOff</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-warning"></span>
+                        <span>Етика и съответствие</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Бизнес поведение и етика</a>
+                        <a href="#">Антикорупционни политики</a>
+                        <a href="#">Регистри</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-users"></span>
+                        <span>Кариери</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-layers"></span>
+                        <span>Структури</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#" aria-haspopup="true" class="user">
+                        <div>
+                            Иван Иванов
+                        </div>
+                        <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="portrait" />
+                    </a>
+                    <div class="submenu submenu-right" aria-label="submenu">
+                        <a href="#">Профил</a>
+                        <a href="#">Управление</a>
+                        <hr />
+                        <a href="#">Изход</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="card primary" id="filter">
+            <div>
+                <div class="select">
+                    <select>
+                        <option>Всички</option>
+                        <optgroup label="Правилници">
+                            <option>Вътрешни правила</option>
+                            <option>Политики</option>
+                        </optgroup>
+                        <option>Процедури</option>
+                        <option>Бланки</option>
+                        <option>Придобивки</option>
+                    </select>
+                </div>
+                <input id="search" type="search" placeholder="Търси заглавие във избраната категория" />
+            </div>
+        </section>
+
+        <section class="card default" id="docs">
+            <header>
+                <h1>Документи</h1>
+                <span class="lnr lnr-book"></span>
+            </header>
+            <div class="scroll">
+                <ul class="unstyled">
+                    <li>
+                        <a href="#">Вътрешни правила за организацията на работната заплата в Нова Броудкастинг
+                            Груп</a><br />
+                    </li>
+
+                    <li>
+                        <a href="#">Политика за чисто бюро</a><br />
+                    </li>
+                    <li>
+                        <a href="#">Процедура за провеждане на менторска програма</a><br />
+                    </li>
+                    <li>
+                        <a href="#">Процедура за вътрешен подбор - Нова</a><br />
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <div class="paginator">
+                <a href="#"><span class="lnr lnr-chevron-left-circle"></span></a>
+                <a href="#"><span class="lnr lnr-chevron-right-circle"></span></a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="apart primary" id="footer">
+        <div id="links">
+            <a href="#">Политика за бисквитките</a>
+            <a href="#">Политика за поверителност</a>
+        </div>
+        <small id="copyright">
+            © Copyright 2023 Gravital, All Rights Reserved.
+        </small>
+    </footer>
+
+</body>
+
+</html>

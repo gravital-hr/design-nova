@@ -1,0 +1,85 @@
+body {
+    background: repeat url(../images/people-bg.jpg), linear-gradient(90deg,
+            var(--color-primary) 0%,
+            var(--color-mid-gradient) 50%,
+            var(--color-primary) 100%);
+}
+
+#mission {
+    background: center / contain no-repeat url(../images/nova-mission.jpg);
+}
+
+#header .user div {
+    font-size: .8rem;
+}
+
+/* news styling */
+:root {
+    --news-img-size: 40px;
+}
+
+.news .img,
+.news .img>*,
+.news img {
+    border-radius: 8px !important;
+}
+
+.news h1 {
+    font-size: 1rem;
+}
+
+
+/* box layout */
+#inspiration {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+#mission {
+    grid-column: 3;
+    grid-row: 1 / 3;
+
+}
+
+#news {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+#events {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+/* button links */
+.button {
+    padding: .6rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    text-transform: uppercase;
+    /* align text center/middle */
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.button.primary {
+    color: white;
+}
+
+.button.primary:hover {
+    color: var(--color-text);
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+}
+
+#focus {
+    background-color: transparent !important;
+    box-shadow: none;
+}
