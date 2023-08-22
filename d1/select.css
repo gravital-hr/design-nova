@@ -16,7 +16,6 @@ input {
     position: relative;
 
     min-width: 15ch;
-    max-width: 30ch;
 
     border-bottom: 1px solid white;
     border-radius: 0;
@@ -24,6 +23,7 @@ input {
 
     cursor: pointer;
 }
+
 
 .select select,
 .select::after {
