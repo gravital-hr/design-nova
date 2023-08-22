@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/assets/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.30.0/tabler-icons.min.css"
+        integrity="sha256-zMpYM6KkYVLHkqU5YryFSKD63iD1sjdJk7Dq8DEkC8I=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="../dashboard.css" />
+    <link rel="stylesheet" href="../card.css" />
+    <link rel="stylesheet" href="../news.css" />
+    <link rel="stylesheet" href="../badge.css" />
+    <link rel="stylesheet" href="../lists.css" />
+    <link rel="stylesheet" href="../header.css" />
+    <link rel="stylesheet" href="../footer.css" />
+    <link rel="stylesheet" href="../layout.css" />
+    <link rel="stylesheet" href="select.css" />
+    <link rel="stylesheet" href="custom.css" />
+    <title>Документи · Обучения · Дизайн 1</title>
+
+</head>
+
+<body>
+
+    <header id="header">
+        <img class="brand" src="https://nstatic.nova.bg/files/nova/images/nova-logo.svg" />
+        <nav class="nav" role="navigation">
+            <ul>
+                <li>
+                    <a href="#" aria-haspopup="true" class="selected">
+                        <span class="lnr lnr-graduation-hat"></span>
+                        <span>Обучения</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Текущи</a>
+                        <a href="#">Резултати</a>
+                        <a href="#">Библиотека</a>
+                        <a href="#" class="selected">Документи</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-list"></span>
+                        <span>Цели и оценка</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Ценности</a>
+                        <a href="#">24/7 Обратна Връзка</a>
+                        <a href="#">Цели</a>
+                        <a href="#">Оценка</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-rocket"></span>
+                        <span>Програми</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Етика и съответствие</a>
+                        <a href="#">Менторска програма</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-leaf"></span>
+                        <span>TimeOff</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-warning"></span>
+                        <span>Етика и съответствие</span>
+                    </a>
+                    <div class="submenu" aria-label="submenu">
+                        <a href="#">Бизнес поведение и етика</a>
+                        <a href="#">Антикорупционни политики</a>
+                        <a href="#">Регистри</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-users"></span>
+                        <span>Кариери</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="lnr lnr-layers"></span>
+                        <span>Структури</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="#" aria-haspopup="true" class="user">
+                        <div>
+                            Иван Иванов
+                        </div>
+                        <img src="https://randomuser.me/api/portraits/men/81.jpg" alt="portrait" />
+                    </a>
+                    <div class="submenu submenu-right" aria-label="submenu">
+                        <a href="#">Профил</a>
+                        <a href="#">Управление</a>
+                        <hr />
+                        <a href="#">Изход</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="card primary" id="filter">
+            <div>
+                <div class="select">
+                    <select id="filterCategory">
+                        <option>Всички</option>
+                        <optgroup label="Правилници">
+                            <option>Вътрешни правила</option>
+                            <option>Политики</option>
+                        </optgroup>
+                        <option>Процедури</option>
+                        <option>Бланки</option>
+                        <option>Придобивки</option>
+                    </select>
+                </div>
+                <input id="search" type="search" placeholder="Търси заглавие във избраната категория" />
+            </div>
+        </section>
+
+        <section class="card default" id="docs">
+            <header>
+                <h1>Документи <a href="#" class="badge">създай нов документ</a></h1>
+                <span class="lnr lnr-book"></span>
+            </header>
+            <div class="scroll">
+                <ul class="unstyled" id="list">
+                    <li>
+                        <a href="#">Вътрешни правила за организацията на работната заплата в Нова Броудкастинг
+                            Груп</a><br />
+                    </li>
+
+                    <li>
+                        <a href="#">Политика за чисто бюро</a><br />
+                    </li>
+                    <li>
+                        <a href="#">Процедура за провеждане на менторска програма</a><br />
+                    </li>
+                    <li>
+                        <a href="#">Процедура за вътрешен подбор - Нова</a><br />
+                    </li>
+                </ul>
+            </div>
+            <hr />
+            <div class="paginator">
+                <a href="#"><span class="lnr lnr-chevron-left-circle"></span></a>
+                <a href="#"><span class="lnr lnr-chevron-right-circle"></span></a>
+            </div>
+        </section>
+
+        <section class="card default" id="preview">
+            <header>
+                <h1 id="previewTitle">Изберете документ</h1>
+                <span class="lnr lnr-book"></span>
+
+            </header>
+            <div class="scroll">
+                <object id="previewPane" width="100%" height="100%">натиснете линк,
+                    за да отворите
+                    документа</object>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="apart primary" id="footer">
+        <div id="links">
+            <a href="#">Политика за бисквитките</a>
+            <a href="#">Политика за поверителност</a>
+        </div>
+        <small id="copyright">
+            © Copyright 2023 Gravital, All Rights Reserved.
+        </small>
+    </footer>
+
+    <script>
+        const docs = [
+            { category: 'Правилници', title: 'Вътрешни правила за организацията на работната заплата в Нова Броудкастинг Груп' },
+            { category: 'Правилници', title: 'Политика за чисто бюро' },
+            { category: 'Процедури', title: 'Процедура за вътрешен подбор - Нова' },
+            { category: 'Процедури', title: 'Процедура за провеждане на менторска програма' },
+            { category: 'Бланки', title: 'Бланка за прекратяване на трудов договор по взаимно съгласие' },
+            { category: 'Бланки', title: 'Бланка за прекратяване на трудов договор с предизвестие' },
+            { category: 'Бланки', title: 'Молба за смяна на банкова сметка' },
+            { category: 'Придобивки', subcategory: 'Други', title: 'Coolfit' },
+            { category: 'Придобивки', subcategory: 'Други', title: 'Green Deli Vending' },
+            { category: 'Придобивки', subcategory: 'Допълнително здравно осигуряване', title: 'Допълнително здравно осигуряване - Инструкции (NOVA)' },
+            { category: 'Придобивки', subcategory: 'Допълнително здравно осигуряване', title: 'Допълнително здравно осигуряване - Искане за плащане' },
+            { category: 'Придобивки', subcategory: 'Допълнително здравно осигуряване', title: 'Допълнително здравно осигуряване - Моето здравно досие' },
+            { category: 'Придобивки', subcategory: 'Допълнително здравно осигуряване', title: 'Допълнително здравно осигуряване - Молба за добавяне член семейство' },
+            { category: 'Придобивки', subcategory: 'Допълнително здравно осигуряване', title: 'Допълнително здравно осигуряване - Общи условия' },
+            { category: 'Придобивки', subcategory: 'Допълнително здравно осигуряване', title: 'Допълнително здравно осигуряване - Покрити разходи' },
+            { category: 'Придобивки', subcategory: 'Допълнително здравно осигуряване', title: 'Допълнително здравно осигуряване - Списък на лечебни заведения' },
+            { category: 'Придобивки', subcategory: 'Банкови оферти', title: 'ДСК - Оферта лизинг на автомобил' },
+            { category: 'Придобивки', subcategory: 'Банкови оферти', title: 'ДСК - Оферта от банка' },
+            { category: 'Придобивки', subcategory: 'Банкови оферти', title: 'ДСК - Оферта стоков кредит' },
+            { category: 'Придобивки', subcategory: 'Застраховки', title: 'Застраховка Злополука' },
+            { category: 'Придобивки', subcategory: 'Застраховки', title: 'Застраховка Злополука - Инструкции' },
+            { category: 'Придобивки', subcategory: 'Застраховки', title: 'Застраховка Злополука - Искане за плащане' },
+            { category: 'Придобивки', subcategory: 'Застраховки', title: 'Застраховка Злополука - Общи условия' },
+            { category: 'Придобивки', subcategory: 'Застраховки', title: 'Застраховка Злополука - Специални условия' },
+            { category: 'Придобивки', subcategory: 'Други', title: 'Мултиспорт - Декларация за деца' },
+            { category: 'Придобивки', subcategory: 'Други', title: 'Мултиспорт - Молба за издаване на карта' },
+            { category: 'Придобивки', subcategory: 'Други', title: 'Оферта за служители - Коли под наем' },
+            { category: 'Придобивки', subcategory: 'Други', title: 'Оферта за служители - Студио "Театрална шапка"' },
+            { category: 'Придобивки', subcategory: 'Други', title: 'Разписание за служебен транспорт' },
+            { category: 'Придобивки', subcategory: 'Банкови оферти', title: 'УниКредит Булбанк - оферта за младежи' },
+            { category: 'Придобивки', subcategory: 'Банкови оферти', title: 'УниКредит Булбанк - оферта от банка' },
+        ];
+
+        const categoryFilter = document.getElementById('filterCategory');
+        const searchFilter = document.getElementById('search');
+
+        categoryFilter.innerHTML = '<option value="">Всички</option>' + Object.entries(docs.reduce((acc, e) => {
+            const _set = (acc[e.category] || (acc[e.category] = new Set()))
+            if (e.subcategory) _set.add(e.subcategory);
+            return acc;
+        }, {})).map(([cat, sub]) => {
+            const opts = [...sub].map(e => `<option value="${cat}\t${e}">${e}</option>`);
+            return sub.size == 0
+                ? `<option>${cat}</option>`
+                : `<optgroup label="${cat}"><option value="${cat}\t">Всички</option>${opts}</optgroup>`;
+        }).join('');
+
+        const matches = (e) => {
+            const [cat, sub] = categoryFilter.value.split('\t');
+            const txt = searchFilter.value.toLowerCase();
+
+            if (cat && e.category != cat) return false;
+            if (sub && e.subcategory != sub) return false;
+            if (txt && !e.title.toLowerCase().includes(txt)) return false;
+            return true;
+        }
+
+        const doFilter = () => {
+            document.getElementById('list').innerHTML = docs.filter(matches)
+                .map(e => `<li><a href="#" onclick="javascript:selectDocument(event, '${e.title}')">${e.title}</a></li>`)
+                .join('');
+        }
+
+        let timer;
+        searchFilter.addEventListener('input', () => {
+            clearTimeout(timer);
+            timer = setTimeout(doFilter, 300);
+        });
+        categoryFilter.addEventListener('change', doFilter);
+
+        doFilter();
+
+        Array.prototype.random = function () {
+            return this[Math.floor((Math.random() * this.length))];
+        }
+
+        const selectDocument = (e, title) => {
+            e.stopPropagation();
+            e.preventDefault();
+            document.getElementById('previewTitle').innerText = title;
+            document.getElementById('previewPane').data = [
+                'https://freetestdata.com/wp-content/uploads/2021/09/Free_Test_Data_100KB_PDF.pdf',
+                'https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf',
+                'http://s29.q4cdn.com/175625835/files/doc_downloads/test.pdf',
+                'https://www.learningcontainer.com/wp-content/uploads/2019/09/sample-pdf-file.pdf',
+                'https://gbihr.org/images/docs/test.pdf',
+                'http://www.oxerfarm.com/images/smalltest.pdf'
+            ].random();
+        }
+
+
+    </script>
+
+
+</body>
+
+</html>
