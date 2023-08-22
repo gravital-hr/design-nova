@@ -1,12 +1,12 @@
 body {
-    background: repeat 1% url(../images/people-bg.jpg), linear-gradient(90deg,
+    background: repeat url(../images/people-bg.jpg), linear-gradient(90deg,
             var(--color-primary) 0%,
             var(--color-mid-gradient) 50%,
             var(--color-primary) 100%);
 }
 
 #mission {
-    background: center / contain no-repeat url(../images/nova-mission.jpg);
+    background: center / contain no-repeat url(../images/nova-mission.png);
 }
 
 #header .user div {
